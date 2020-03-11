@@ -1,0 +1,215 @@
+body {
+    background: hsl(0, 0%, 98%);
+}
+
+#header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    /* background: pink; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#header .inner {
+    width: 975px;
+    height: 77px;
+    margin: 0 auto;
+    /* background: palevioletred; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 35%;
+}
+
+#header .inner .logo > a {
+    color: transparent;
+}
+
+#header .inner .logo .logoImageBox .logoImage {
+    position: relative;
+    /* margin-right: 30px; */
+}
+
+#header .inner .logo .logoImageBox .logoImage:after {
+    content: '';
+    width: 1px;
+    height: 28px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    /* right: -15px; */
+    /* top: -4px; */
+    /* transition: all .5s; */
+}
+
+#header .inner .logo div {
+    vertical-align: middle;
+}
+
+.logoImageBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.logoImage {
+    /* display: inline-block; */
+    transform: scale(0.4);
+}
+
+.logoTextBox {
+    /* display: inline-block; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 75px;
+    margin-left: 90px;
+    /* background: red; */
+}
+
+.logoText {
+    /* display: inline-block; */
+    transform: scale(0.4);
+}
+
+#header .searchBox{
+    position: relative;
+    width: 25%;
+}
+
+#searchField{
+    width: 185px;
+    height: 28px;
+    background:#fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding:3px 30px;
+    color:#999;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    outline:none;
+}
+
+#searchField::placeholder{
+    font-size: 0;
+}
+
+#searchField:focus::placeholder{
+    font-size: 14px;
+}
+
+#header .searchBox .fakeField{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    /* vertical-align: middle; */
+}
+
+.searchText {
+    line-height: 450%;
+    margin-left: -20px;
+}
+
+#searchField:focus ~ .fakeField > span:nth-child(1){
+    transform:translateX(-90px);
+}
+
+#searchField:focus ~ .fakeField > span:nth-child(2){
+    display: none;
+}
+
+.rightIcons {
+    width: 35%;
+}
+
+.cameraIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.cameraIcon {
+    /* display: inline-block; */
+    transform: scale(0.3);
+}
+
+.compassIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.compassIcon {
+    /* display: inline-block; */
+    transform: scale(0.3);
+}
+
+.heartOutlineIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.heartOutlineIcon {
+    /* display: inline-block; */
+    transform: scale(0.3);
+}
+
+.userOutlineIconBox {
+    /* display: inline-block; */
+    /* float: left; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.userOutlineIcon {
+    /* display: inline-block; */
+    transform: scale(0.3);
+}
+
+#header .rightIcons{
+    /* width: 132px;
+    display: flex;
+    justify-content: space-between; */
+}
+#header .rightIcons > div{
+
+}
