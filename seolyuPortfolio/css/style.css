@@ -233,9 +233,12 @@ body {
     width: 935px;
     /* height: 500px; */
     /* background: pink; */
+    position: relative;
 }
 
-.contentsBox {}
+.contentsBox {
+
+}
 
 .contents {
     width: 614px;
@@ -445,3 +448,186 @@ body {
     pointer-events: none;
     opacity: 0.6;
 } 
+
+
+.sideBox {
+    width: 293px;
+    /* height: 300px; */
+    /* background: rgba(255, 192, 203, 0.377); */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sideBox .profileThumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.sideBox .profileThumb img {
+    width: 100%;
+    height:100%;
+}
+
+.sideBox .userProfile {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color:#262626;
+}
+
+.sideBox .detail .id {
+    margin-bottom: 5px;
+}
+
+.sideBox .detail .koName {
+    font-size: 12px;
+    color:#999;
+}
+
+
+.sideBox > article {
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 291px;
+    font-size: 14px;
+    color:#262626;
+    font-weight: bold;
+    background: white;
+}
+
+.sideBox > article > header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color:#999;
+}
+
+
+.sideBox > article > header .more {
+    font-size: 12px;
+    color:#262626;
+    cursor: pointer;
+}
+
+.thumbUser {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.thumbUser .profileThumb {
+    width: 34px;
+    height: 34px;
+}
+
+.thumbUser .time {
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    color:#999;
+}
+
+.sideBox .scrollInner {
+    height: 182px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*overflow:hidden auto;*/
+}
+
+
+.hiddenMenu {
+    display: none;
+    width: 600px;
+    /*background: red;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 3px;
+}
+
+.hiddenMenu .scrollInner {
+    height: 100px;
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.hiddenMenu .scrollInner .user {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    justify-content: space-between;
+}
+
+.hiddenMenu .scrollInner .user .id {
+    font-size: 12px;
+    color:#262626;
+}
+
+.hiddenMenu .thumbImg {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.hiddenMenu .thumbImg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 1000px 이하로 줄었을 때 */
+@media screen and (max-width: 1000px) {
+
+    #header .inner {
+        width: 97.5%;
+    }
+
+    #mainContainer {
+        padding-top: 220px;
+    }
+
+    #mainContainer .inner {
+        width: 93.5%;
+    }
+
+    .contentsBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sideBox {
+        display: none;
+    }
+
+    .hiddenMenu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #header .searchBox {
+        display: none;
+    }
+
+    .hiddenMenu {
+        width: 95%;
+    }
+}
