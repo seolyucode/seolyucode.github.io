@@ -1,3 +1,12 @@
+.mText {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sText {
+    font-size: 12px;
+}
+
 body {
     background: hsl(0, 0%, 98%);
 }
@@ -26,7 +35,7 @@ body {
     width: 35%;
 }
 
-#header .inner .logo > a {
+#header .inner .logo>a {
     color: transparent;
 }
 
@@ -84,38 +93,38 @@ body {
     transform: scale(0.4);
 }
 
-#header .searchBox{
+#header .searchBox {
     position: relative;
     width: 25%;
 }
 
-#searchField{
+#searchField {
     width: 185px;
     height: 28px;
-    background:#fafafa;
+    background: #fafafa;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
-    padding:3px 30px;
-    color:#999;
+    padding: 3px 30px;
+    color: #999;
     font-weight: 400;
     text-align: left;
     font-size: 14px;
-    outline:none;
+    outline: none;
 }
 
-#searchField::placeholder{
+#searchField::placeholder {
     font-size: 0;
 }
 
-#searchField:focus::placeholder{
+#searchField:focus::placeholder {
     font-size: 14px;
 }
 
-#header .searchBox .fakeField{
+#header .searchBox .fakeField {
     position: absolute;
     left: 45%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     pointer-events: none;
     /* vertical-align: middle; */
 }
@@ -125,11 +134,11 @@ body {
     margin-left: -20px;
 }
 
-#searchField:focus ~ .fakeField > span:nth-child(1){
-    transform:translateX(-90px);
+#searchField:focus~.fakeField>span:nth-child(1) {
+    transform: translateX(-90px);
 }
 
-#searchField:focus ~ .fakeField > span:nth-child(2){
+#searchField:focus~.fakeField>span:nth-child(2) {
     display: none;
 }
 
@@ -171,7 +180,7 @@ body {
     transform: scale(0.3);
 }
 
-.heartOutlineIconBox {
+.heartIconBox {
     /* display: inline-block; */
     float: left;
     overflow: hidden;
@@ -183,7 +192,7 @@ body {
     /* background: orange; */
 }
 
-.heartOutlineIcon {
+.heartIcon {
     /* display: inline-block; */
     transform: scale(0.3);
 }
@@ -205,11 +214,234 @@ body {
     transform: scale(0.3);
 }
 
-#header .rightIcons{
-    /* width: 132px;
+#header .rightIcons {
+    width: 132px;
     display: flex;
-    justify-content: space-between; */
+    justify-content: space-between;
 }
-#header .rightIcons > div{
+
+#header .rightIcons>div {}
+
+
+#mainContainer {
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+#mainContainer .inner {
+    width: 935px;
+    /* height: 500px; */
+    /* background: pink; */
+}
+
+.contentsBox {}
+
+.contents {
+    width: 614px;
+    /* height: 500px; */
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 3px;
+    margin-bottom: 60px;
+    background: white;
 
 }
+
+.contents .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.contents .top .profileImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.contents .top .profileImg img {
+    width: 100%;
+}
+
+.contents .top .userContainer {
+    display: flex;
+}
+
+.contents .imgSection {
+    overflow: hidden;
+}
+
+.contents .imgSection img {
+    width: 100%;
+}
+
+
+.heartOutlineIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.heartOutlineIcon {
+    /* display: inline-block; */
+    transform: scale(0.6);
+}
+
+.bubbleIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.bubbleIcon {
+    /* display: inline-block; */
+    transform: scale(0.9);
+}
+
+.shareIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    /* background: orange; */
+}
+
+.shareIcon {
+    /* display: inline-block; */
+    transform: scale(0.5);
+}
+
+.bookmarkIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    /* background: orange; */
+}
+
+.bookmarkIcon {
+    /* display: inline-block; */
+    transform: scale(0.45);
+}
+
+.contents .bottomIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px: */
+}
+
+.contents .bottomIcons .leftIcons {
+    display: flex;
+}
+
+
+.contents .bottomIcons .leftIcons > div {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contents .bottomIcons .rightIcon > div {
+    cursor: pointer;
+}
+
+.contents .likes {
+    padding: 5px 20px;
+    color: #262626;
+}
+
+.contents .commentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.contents .commentContainer .comment {
+    display: flex;
+    font-size: 14px;
+}
+
+.contents .commentContainer .comment .nickName {
+    margin-right: 10px;
+}
+
+.smallHeartOutlineIconBox {
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    /* background: orange; */
+}
+
+.smallHeartOutlineIcon {
+    /* display: inline-block; */
+    transform: scale(0.25);
+}
+
+.contents .timer {
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    color: #999;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 10px 20px;
+}
+
+.contents .commentField {
+    min-height: 56px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.contents .commentField input {
+    width: 100%;
+    height: 56px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.contents .commentField input:focus ~ .uploadBtn{
+    pointer-events: initial;
+    opacity: 1;
+}
+
+.contents .commentField .uploadBtn {
+    color: #3897f0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0.6;
+} 
