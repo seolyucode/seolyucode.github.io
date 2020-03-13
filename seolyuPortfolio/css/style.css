@@ -214,13 +214,35 @@ body {
     transform: scale(0.3);
 }
 
+.moreIconBox {
+    /* display: inline-block; */
+    /* float: left; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    /* background: orange; */
+}
+
+.moreIcon {
+    /* display: inline-block; */
+    transform: scale(0.13);
+}
+
+.moreIcon:hover {
+    /* display: inline-block; */
+    transform: scale(0.14);
+}
+
 #header .rightIcons {
     width: 132px;
     display: flex;
     justify-content: space-between;
 }
 
-#header .rightIcons>div {}
+#header .rightIcons > div {}
 
 
 #mainContainer {
@@ -371,6 +393,7 @@ body {
 .contents .bottomIcons .rightIcon > div {
     cursor: pointer;
 }
+
 
 .contents .likes {
     padding: 5px 20px;
