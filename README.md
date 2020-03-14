@@ -1,7 +1,6 @@
 ---
 
-title: SeolYu Lee
-
+이설유(Seolyu Lee)'s Portfolio
 ---
 
-seolyugithub
+https://seolyucode.github.io/seolyuPortfolio/
