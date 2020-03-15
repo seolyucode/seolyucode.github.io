@@ -17,7 +17,7 @@ body {
     left: 0;
     top: 0;
     z-index: 999;
-    /* background: pink; */
+    /* background: rgba(112, 51, 51, 0.801); */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -78,15 +78,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 85px;
-    height: 75px;
+    width: 140px;
+    height: 80px;
     margin-left: 90px;
     /* background: red; */
 }
 
 .logoText {
     /* display: inline-block; */
-    transform: scale(0.4);
+    transform: scale(0.33);
 }
 
 #header .searchBox {
@@ -537,41 +537,11 @@ body {
 }
 
 .seolyuIdleSide {
-    background-color: gray;
+    background-color: rgb(202, 79, 79);
     width: 7.6%;
     height: 130px;
     float: left;
     /* overflow: hidden; */
-}
-
-/* .icon1 .icon2 .icon3 {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    margin-left: 3px;
-    margin-right: 5px;
-} */
-
-.seolyuIdleSideIcon1 {
-    transform: scale(1);
-    /* transform-origin: left top; */
-    /* background-color: red; */
-}
-
-.seolyuIdleSideIcon2 {
-    transform: scale(0.1);
-    transform-origin: left top;
-    /* background-color: red; */
-    margin-bottom: -190px;
-}
-
-.seolyuIdleSideIcon3 {
-    transform: scale(0.1);
-    transform-origin: left top;
-    background-color: red;
 }
 
 .seolyuIdleHTML {
