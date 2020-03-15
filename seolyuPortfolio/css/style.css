@@ -538,7 +538,7 @@ body {
 
 .seolyuIdleSide {
     background-color: gray;
-    width: 7.3%;
+    width: 7.6%;
     height: 130px;
     float: left;
     /* overflow: hidden; */
@@ -556,16 +556,15 @@ body {
 } */
 
 .seolyuIdleSideIcon1 {
-    transform: scale(0.1);
-    transform-origin: left top;
-    background-color: red;
-    margin-bottom: -190px;
+    transform: scale(1);
+    /* transform-origin: left top; */
+    /* background-color: red; */
 }
 
 .seolyuIdleSideIcon2 {
     transform: scale(0.1);
     transform-origin: left top;
-    background-color: red;
+    /* background-color: red; */
     margin-bottom: -190px;
 }
 
