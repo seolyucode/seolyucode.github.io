@@ -224,8 +224,24 @@
                     </article>
                 </div>
 
+                <div class="myClock">
+                    <div class="seolyuClock">
+                        <img src="imgs\clock\clock.png" alt="">
+                        <div class="syHour">
+                            <div class="hr" id="hr"></div>
+                        </div>
+                        <div class="syMin">
+                            <div class="mn" id="mn"></div>
+                        </div>
+                        <div class="sySec">
+                            <div class="sc" id="sc"></div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="sideBox">
+
 
                     <article>
                         <div class="seolyuCard">
@@ -251,8 +267,12 @@
                             </div>
 
                             <div class="seolyuIdleHTML">
-                                <div class="card">
-                                    HTML 코드
+                                <div class="card syText align-center">
+                                    <div class="htmlTag" style="display: inline-block;">&lt;</div><div class="htmlTagText" style="display: inline-block;">card</div><div class="htmlTag" style="display: inline-block;">&gt;</div></br>
+                                    &nbsp&nbsp&nbsp<div class="htmlTag" style="display: inline-block;">&lt;</div><div class="htmlTagText" style="display: inline-block;">name</div><div class="htmlTag" style="display: inline-block;">&gt;</div><div class="htmlTagCon" style="display: inline-block;">Seolyu Lee</div><div class="htmlTag" style="display: inline-block;">&lt;/</div><div class="htmlTagText" style="display: inline-block;">name</div><div class="htmlTag" style="display: inline-block;">&gt;</div></br>
+                                    &nbsp&nbsp&nbsp<div class="htmlTag" style="display: inline-block;">&lt;</div><div class="htmlTagText" style="display: inline-block;">title</div><div class="htmlTag" style="display: inline-block;">&gt;</div><div class="htmlTagCon" style="display: inline-block;">Programmer</div><div class="htmlTag" style="display: inline-block;">&lt;/</div><div class="htmlTagText" style="display: inline-block;">title</div><div class="htmlTag" style="display: inline-block;">&gt;</div></br>
+                                    &nbsp&nbsp&nbsp<div class="htmlTag" style="display: inline-block;">&lt;</div><div class="htmlTagText" style="display: inline-block;">email</div><div class="htmlTag" style="display: inline-block;">&gt;</div><div class="htmlTagCon" style="display: inline-block;">seolyu.90@gmail.com</div><div class="htmlTag" style="display: inline-block;">&lt;/</div><div class="htmlTagText" style="display: inline-block;">email</div><div class="htmlTag" style="display: inline-block;">&gt;</div></br>
+                                    <div class="htmlTag" style="display: inline-block;">&lt;/</div><div class="htmlTagText" style="display: inline-block;">card</div><div class="htmlTag" style="display: inline-block;">&gt;</div></br>
                                 </div>
                             </div>
                         </div>
@@ -956,6 +976,24 @@
     </script>
 
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        const deg = 6;
+        const hr = document.querySelector('#hr');
+        const mn = document.querySelector('#mn');
+        const sc = document.querySelector('#sc');
+
+        setInterval(() => {
+            let day = new Date();
+            let hh = day.getHours() * 30;
+            let mm = day.getMinutes() * deg;
+            let ss = day.getSeconds() * deg;
+
+            hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
+        })
+    </script>
 </body>
 
 </html>

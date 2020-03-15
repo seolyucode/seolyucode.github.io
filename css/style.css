@@ -1,3 +1,9 @@
+.syText {
+    font-size: 13.5px;
+    font-weight: bold;
+    /* color: pink; */
+}
+
 .mText {
     font-size: 14px;
     font-weight: bold;
@@ -5,6 +11,18 @@
 
 .sText {
     font-size: 12px;
+}
+
+.htmlTag {
+    color: dodgerblue;
+}
+
+.htmlTagText {
+    color: rgb(235, 102, 157);
+}
+
+.htmlTagCon {
+    color:rgb(84, 167, 109)
 }
 
 body {
@@ -502,6 +520,100 @@ body {
     height:100%;
 }
 
+
+
+.seolyuClock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(imgs\clock\clock.png); */
+    background-size: cover;
+    /* border: 4px solid #091921; */
+    /* border-radius: 50%; */
+    /* box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(43, 5, 5, 0.05),
+                0 15px 15px rgba(0, 0, 0, 3),
+                inset 0 15px 15px rgba(0, 0, 0, 3); */
+}
+
+.seolyuClock:before {
+    /* content: ''; */
+    /* position: absolute; */
+    /* width: 15px; */
+    /* height: 15px; */
+    /* background: #fff; */
+    /* border-radius: 50%; */
+    /* z-index: 10000; */
+    /* background: url('paw.png'); */
+}
+
+.seolyuClock .syHour,
+.seolyuClock .syMin,
+.seolyuClock .sySec {
+    position: absolute;
+}
+
+.seolyuClock .syHour, .hr {
+    width: 160px;
+    height: 160px;
+}
+
+.seolyuClock .syMin, .mn {
+    width: 190px;
+    height: 190px;
+}
+
+.seolyuClock .sySec, .sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    /* border-radius: 50%; */
+}
+
+.hr:before 
+{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #b80d62;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #1e5e05;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ebbb1e;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+.myClock {
+    transform: scale(0.6);
+    margin-left: -20px;
+}
+
+
 .sideBox .seolyuCard {
     width: 293px;
     height: 150px;
@@ -512,7 +624,7 @@ body {
 .seolyuIdleHeader {
     width: 100%;
     height: 20px;
-    background-color: rgb(71, 70, 71);
+    background-color: rgb(211, 82, 125);
     line-height: 20px;
 }
 
@@ -537,7 +649,7 @@ body {
 }
 
 .seolyuIdleSide {
-    background-color: rgb(202, 79, 79);
+    background-color: rgb(235, 150, 177);
     width: 7.6%;
     height: 130px;
     float: left;
@@ -545,8 +657,10 @@ body {
 }
 
 .seolyuIdleHTML {
-    width: 80%;
+    width: 92.4%;
+    height: 130px;
     float: left;
+    background-color: rgb(247, 229, 232);
 }
 
 
