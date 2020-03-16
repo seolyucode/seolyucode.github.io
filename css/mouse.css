@@ -7,7 +7,25 @@
     width: 200px;
     height: 200px;
     margin: auto;
+    z-index: 2;
 }
+
+.userContainer {
+    z-index: 3;
+}
+
+.moreIconBox {
+    z-index: 3;
+}
+
+.leftIcons {
+    z-index: 3;
+}
+
+.rightIcon {
+    z-index: 3;
+}
+
 
 @keyframes flower-ani {
     from {
