@@ -424,6 +424,7 @@ body {
     float: left;
     line-height: 75px;
     font-weight: bold;
+    
 }
 
 .shareIconBox {
@@ -859,7 +860,7 @@ body {
 
 
 /* 1000px 이하로 줄었을 때 */
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
 
     #header .inner {
         width: 97.5%;
@@ -897,4 +898,4 @@ body {
     .hiddenMenu {
         width: 95%;
     }
-}
+} */
