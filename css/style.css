@@ -403,6 +403,37 @@ body {
     transform: scale(0.6);
 }
 
+.pichu {
+    float: left;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    transform: scale(0.9);
+}
+
+#pHead {
+    animation: pichuHead-ani 0.6s infinite alternate cubic-bezier(0.46, 0.18, 0.66, 0.93);
+}
+
+@keyframes pichuHead-ani {
+    to { 
+        transform: rotateX(-10deg);
+        transform-origin: bottom; 
+    }
+}
+
+#pRose {
+    animation: pichuRose-ani 1s infinite alternate;
+}
+
+@keyframes pichuRose-ani {
+    to {
+        transform: rotateY(-10deg);
+        transform-origin: left; 
+    }
+}
+
 .bubbleIconBox {
     /* display: inline-block; */
     float: left;
@@ -860,7 +891,7 @@ body {
 
 
 /* 1000px 이하로 줄었을 때 */
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
     #header .inner {
         width: 97.5%;
@@ -876,6 +907,7 @@ body {
 
     .contentsBox {
         display: flex;
+        /* width: 90px; */
         flex-direction: column;
         align-items: center;
     }
@@ -886,6 +918,20 @@ body {
 
     .hiddenMenu {
         display: block;
+    }
+
+    .sideBox .seolyuCard {
+        /* float: left; */
+        width: 293px;
+        height: 150px;
+        align-items: center;
+        color:#262626;
+    }
+
+    .fishBowl2 {
+        transform: scale(0.3);
+        margin-top: 40px;
+        margin-right: -300px;
     }
 }
 
@@ -898,4 +944,46 @@ body {
     .hiddenMenu {
         width: 95%;
     }
-} */
+    
+    .fishBowl2 {
+        transform: scale(0.3);
+        margin-top: 70px;
+        margin-right: -250px;
+    }
+
+    .contentsBox {
+        margin-top: 40px;
+    }
+
+    .contents {
+        width: 90%;
+    }
+
+    .top {
+        margin-top: -10px;
+        margin-bottom: -50px;
+    }
+
+    .bottomIcons {
+        width: 90%;
+        margin-top: -40px;
+    }
+
+    .pichu {
+        transform: scale(1.1);
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .webPub {
+        display: none;
+    }
+
+    .rightIcon {
+        transform: scale(1.4);
+    }
+
+    .seolyuClock {
+        margin-top: -50px;
+    }
+}
