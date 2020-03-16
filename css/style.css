@@ -669,9 +669,14 @@ body {
     border-radius: 6px 6px 0 0;
 }
 
+.clockAndBowl {
+    display: flex;
+}
+
 .myClock {
+    float: left;
     transform: scale(0.6);
-    margin-left: -20px;
+    margin-left: 10px;
 }
 
 
