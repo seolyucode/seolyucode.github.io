@@ -297,6 +297,8 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
+    margin-top: 20px;
+    margin-right: 10px;
     /* background: orange; */
 }
 
@@ -418,7 +420,7 @@ body {
 }
 
 .pichu:hover {
-    transform: scale(1.1);
+    transform: scale(1.1  );
 }
 
 #pHead {
