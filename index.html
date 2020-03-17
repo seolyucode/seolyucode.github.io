@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/fishBowl.css">
     <link rel="stylesheet" href="css/skillBars.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/load.css">
     <link rel="stylesheet" type="text/css" href="css/webPub.css">
 </head>
 
@@ -1757,6 +1758,13 @@
     </section>
 
 
+    <div class="seolyuPortfolioLoading">
+        <span class="seolyuLoading">
+            <div class="seolyuLoad">로딩중</div>
+        </span>
+    </div>
+
+
     <script>
         (() => {
             const seolyuMicElem = document.querySelector('.seolyuMic');
@@ -1823,6 +1831,12 @@
             let progressHeight = (window.pageYOffset / totalHeight) * 100;
             progress.style.height = progressHeight + "%";
         }
+    </script>
+
+    <script>
+        $(window).on("load", function() {
+            $(".seolyuPortfolioLoading").fadeOut("slow");
+        });
     </script>
 </body>
 
