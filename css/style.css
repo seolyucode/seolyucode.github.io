@@ -711,6 +711,12 @@ body {
     margin-left: 10px;
 }
 
+.fishBowl {
+    transform: scale(0.4);
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
 
 .sideBox .seolyuCard {
     width: 293px;
@@ -773,14 +779,14 @@ body {
 
 
 .sideBox > article {
-    border: 1px solid rgba(0,0,0,0.09);
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 3px;
     margin-bottom: 20px;
     width: 291px;
     font-size: 14px;
     color:#262626;
     font-weight: bold;
-    background: white;
+    background: rgba(29, 6, 6, 0);
 }
 
 .sideBox > article > header {
@@ -848,7 +854,7 @@ body {
     transform: translateX(-50%);
     top: 100px;
     overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.09);
+    /* border: 1px solid rgba(0,0,0,0.09); */
     border-radius: 3px;
 }
 
@@ -928,10 +934,20 @@ body {
         color:#262626;
     }
 
+    .seolyuClock {
+        margin-left: -200px;
+    }
+
     .fishBowl2 {
         transform: scale(0.3);
         margin-top: 40px;
         margin-right: -300px;
+    }
+
+    .contact {
+        transform: scale(0.15);
+        margin-right: -370px;
+        margin-top: 150px;
     }
 }
 
@@ -941,14 +957,28 @@ body {
         display: none;
     }
 
-    .hiddenMenu {
-        width: 95%;
+    .sideBox {
+        display: none;
     }
-    
+
+    .hiddenMenu {
+        display: block;
+        width: auto;
+    }
+
+    #hiddenMenu {
+        height: 900px;
+    }
+
+    .seolyuCard {
+        margin: 0 auto;
+        width: 350px;
+    }
+
     .fishBowl2 {
-        transform: scale(0.3);
-        margin-top: 70px;
-        margin-right: -250px;
+        transform: scale(0.25);
+        margin-top: 80px;
+        margin-right: -230px;
     }
 
     .contentsBox {
@@ -984,6 +1014,25 @@ body {
     }
 
     .seolyuClock {
-        margin-top: -50px;
+        transform: scale(0.7);
+        margin-top: -130px;
+        margin-left: -100px;
+        float: left;
+    }
+
+    #myClock {
+        margin-left: -100px;
+    }
+
+    #fishBowl {
+        transform: scale(0.3);
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+
+    #contact {
+        transform: scale(0.2);
+        margin-right: -200px;
+        padding-top: 450px;
     }
 }
