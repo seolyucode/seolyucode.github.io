@@ -9,7 +9,7 @@
 
 .profileWrap {
     width: 40%;
-
+    z-index: 3;
 }
 
 .profileImg {
@@ -28,6 +28,10 @@
 .seolyuDetail .top {
     display: flex;
     align-items: center;
+}
+
+.seolyuDetail {
+    z-index: 3;
 }
 
 .seolyuDetail .seolyuName .seolyuLee {
@@ -66,11 +70,11 @@
     margin-right: 35px;
 }
 
-.seolyuKorea {
+.seolyuDetail .seolyuDes .seolyuKorea {
     line-height: 50px;
 }
 
-.koreaBox {
+.seolyuDetail .seolyuDes .koreaBox {
     float: left;
     overflow: hidden;
     display: flex;
@@ -114,12 +118,12 @@
 .seolyuTab .aboutSeolyu > span:after {
     content: '';
     width: 0;
-    height: 1px;
+    height: 2px;
     position: absolute;
     left: 0;
-    top: -10px;
+    top: -12px;
     transition: all 0.5s;
-    background: #e974a5;
+    background: #f09dbf;
 }
 
 .seolyuTab .aboutSeolyu > span.on:after {
