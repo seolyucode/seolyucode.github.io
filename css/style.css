@@ -415,6 +415,7 @@ body {
 
 .contents .imgSection {
     overflow: hidden;
+    z-index: 3;
 }
 
 .contents .imgSection img {
@@ -427,6 +428,10 @@ body {
     align-items: center;
     justify-content: center;
     height: 400px;
+}
+
+.ACACimg {
+    z-index: 3;
 }
 
 .heartOutlineIconBox {

@@ -88,6 +88,10 @@
     transform: scale(0.15);
 }
 
+.pic {
+    z-index: 3;
+}
+
 .seolyuTab {
     display: flex;
     justify-content: center;
