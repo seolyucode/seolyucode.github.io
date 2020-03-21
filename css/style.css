@@ -424,13 +424,20 @@ body {
 
 .ACAC {
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     height: 400px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.ACAC .ACACimg {
+.ACACimg {
+    position: relative;
+    top: -140px;
+}
+
+.transInner {
     z-index: 3;
 }
 
@@ -1053,8 +1060,17 @@ body {
     }
 
     .top {
-        margin-top: -10px;
-        margin-bottom: -50px;
+        /* margin-top: -10px; */
+        /* margin-bottom: -50px; */
+    }
+
+    .ACAC {
+        height: 360px;
+    }
+
+    .ACACimg {
+        position: relative;
+        top: 0px;
     }
 
     .bottomIcons {
