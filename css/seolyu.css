@@ -88,7 +88,7 @@
     transform: scale(0.15);
 }
 
-.contentsContainer .pic {
+.sInner .contentsContainer .pic {
     z-index: 3;
 }
 
