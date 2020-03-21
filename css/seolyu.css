@@ -255,10 +255,11 @@
 
     .seolyuDetail {
         transform: scale(0.7);
+        margin-left: -20px;
     }
-
-    .seolyuName {
-        margin-top: -20px;
+    
+    .koreaBox {
+        margin-right: -70px;
     }
 }
 
