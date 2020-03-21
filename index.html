@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/fishBowl.css">
     <link rel="stylesheet" href="css/skillBars.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/slide.css">
+
     <link rel="stylesheet" type="text/css" href="css/webPub.css">
 </head>
 
@@ -852,9 +854,23 @@
 
                         <div class="imgSection">
                             <div class="transInner">
-                                <div class="ACAC">
-                                    <img class="ACACimg" src="imgs/imgSection/img01.jpg" alt="visual01">
+                                <div class="ACAC fade">
+                                    <a href="seolyu.html">
+                                        <img class="ACACimg" src="imgs/imgSection/img01.jpg">
+                                    </a>
                                 </div>
+                                <div class="ACAC fade">
+                                    <img class="ACACimg" src="imgs/imgSection/img02.jpg">
+                                </div>
+                                <div class="ACAC fade">
+                                    <img class="ACACimg" src="imgs/imgSection/img03.jpg">
+                                </div>
+                                <div class="ACAC fade">
+                                    <img class="ACACimg" src="imgs/imgSection/img04.jpg">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             </div>
                         </div>
 
@@ -1830,6 +1846,36 @@
                 window.onscroll = function () {
                     let progressHeight = (window.pageYOffset / totalHeight) * 100;
                     progress.style.height = progressHeight + "%";
+                }
+            </script>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("ACAC");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex - 1].style.display = "block";
                 }
             </script>
         </section>
