@@ -235,7 +235,7 @@ body {
 
 .compassIconBox {
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* display: flex; */
     align-items: center;
     justify-content: center;
@@ -293,7 +293,7 @@ body {
 .userOutlineIconBox {
     /* display: inline-block; */
     /* float: left; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* display: flex; */
     align-items: center;
     justify-content: center;
