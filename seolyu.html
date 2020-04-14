@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/pinkBubble.css">
 
     <link rel="stylesheet" href="css/seolyu.css">
+
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -404,7 +406,25 @@
     
                 <div class="aboutMeContents contentsContainer active">
                     <div class="pic">
-                        <a href="#"><img src="imgs/imgSection/img01.jpg" alt=""></a>
+                        <a href="#"><img id="myImg" src="imgs/imgSection/img01.jpg" alt=""></a>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                        <!-- <span class="close">&times;</span> -->
+
+                        <button class="close " type="button">
+                            <svg aria-label="닫기" class="_8-yf5 " fill="#ffffff" height="24" viewBox="0 0 48 48" width="24">
+                                <path clip-rule="evenodd" d="M41.8 9.8L27.5 24l14.2 14.2c.6.6.6 1.5 0 2.1l-1.4 1.4c-.6.6-1.5.6-2.1 0L24 27.5 9.8 41.8c-.6.6-1.5.6-2.1 0l-1.4-1.4c-.6-.6-.6-1.5 0-2.1L20.5 24 6.2 9.8c-.6-.6-.6-1.5 0-2.1l1.4-1.4c.6-.6 1.5-.6 2.1 0L24 20.5 38.3 6.2c.6-.6 1.5-.6 2.1 0l1.4 1.4c.6.6.6 1.6 0 2.2z" fill-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+                    
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
                     </div>
                     <div class="pic">
                         <a href="#"><img src="imgs/imgSection/img02.jpg" alt=""></a>
@@ -594,6 +614,7 @@
             </script>
 
             <script src="js/seolyu.js"></script>
+            <script src="js/modal.js"></script>
         </div>
 
     </section>
