@@ -54,7 +54,7 @@
   }
   
   /* The Close Button */
-  .close {
+  #close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -66,8 +66,29 @@
     border: 0;
   }
   
-  .close:hover,
-  .close:focus {
+  #close:hover,
+  #close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* The Close Button */
+  .close02 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    background: 0 0;
+    border: 0;
+  }
+  
+  .close02:hover,
+  .close02:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
