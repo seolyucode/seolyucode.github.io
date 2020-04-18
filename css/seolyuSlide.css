@@ -317,15 +317,15 @@
     height: 100%; */
 }
 
-.prev,
-.next {
+.prev04,
+.next04 {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: rgb(248, 120, 210);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -333,14 +333,14 @@
     user-select: none;
 }
 
-.next {
+.next04 {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
-    color: rgb(207, 44, 134);
+.prev04:hover,
+.next04:hover {
+    color: rgb(58, 13, 38);
 }
 
 .text {
@@ -393,8 +393,8 @@
 }
 
 @media screen and (max-width: 650px) {
-    .prev,
-    .next {
+    .prev04,
+    .next04 {
     /* top: 40%; */
     }
 
