@@ -970,7 +970,6 @@ body {
 
 /* 1000px 이하로 줄었을 때 */
 @media screen and (max-width: 1000px) {
-
     #header .inner {
         width: 97.5%;
     }
@@ -981,6 +980,10 @@ body {
 
     #mainContainer .inner {
         width: 93.5%;
+        /* display: grid; */
+            /* grid-template-columns: repeat(10, 1fr); */
+            /* grid-template-areas: */
+            /* ". box box box box box box box box ." */
     }
 
     .contentsBox {
@@ -988,6 +991,8 @@ body {
         /* width: 90px; */
         flex-direction: column;
         align-items: center;
+        /* display: grid; */
+        /* grid-area: box; */
     }
     
     .sideBox {
