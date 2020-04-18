@@ -85,3 +85,33 @@ function showSlides04(n) {
     }
     slides[slideIndex04 - 1].style.display = "block";
 }
+
+
+// Artwork
+var slideIndex07 = 1;
+showSlides07(slideIndex07);
+
+// Next/previous controls
+function plusSlides07(n) {
+    showSlides07(slideIndex07 += n);
+}
+
+// Thumbnail image controls
+function currentSlide07(n) {
+    showSlides07(slideIndex07 = n);
+}
+
+function showSlides07(n) {
+    var i;
+    var slides = document.getElementsByClassName("ACAC07");
+    if (n > slides.length) {
+        slideIndex07 = 1
+    }
+    if (n < 1) {
+        slideIndex07 = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex07 - 1].style.display = "block";
+}
