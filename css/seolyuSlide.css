@@ -73,6 +73,7 @@
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    margin-top: -5%;
 }
 
 @-webkit-keyframes fade {
@@ -114,7 +115,8 @@
 
     .ACACimg01 {
         width: 100%;
-        height: auto;
+        /* height: auto; */
+        height: 100%;
     }
 }
 
@@ -135,7 +137,8 @@
     position: relative;
     /* top: -140px; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 100%;
 }
 
 #myImg01 {
@@ -262,7 +265,8 @@
 
     .ACACimg02 {
         width: 100%;
-        height: auto;
+        /* height: auto; */
+        height: 100%;
     }
 }
 
@@ -283,7 +287,8 @@
     position: relative;
     /* top: -140px; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 100%;
 }
 
 #myImg02 {
@@ -411,7 +416,8 @@
 
     .ACACimg04 {
         width: 100%;
-        height: auto;
+        /* height: auto; */
+        height: 100%;
     }
 }
 
@@ -432,7 +438,8 @@
     position: relative;
     /* top: -140px; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 100%;
 }
 
 #myImg04 {
@@ -560,7 +567,8 @@
 
     .ACACimg07 {
         width: 100%;
-        height: auto;
+        /* height: auto; */
+        height: 100%;
     }
 }
 
@@ -581,7 +589,8 @@
     position: relative;
     /* top: -140px; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 100%;
 }
 
 #myImg07 {
