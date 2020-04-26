@@ -1,3 +1,9 @@
+#pdfResume {
+    margin-top: -5%;
+    width: 700px; 
+    height: 800px;
+}
+
 .aboutSeolyu span {
     z-index: 3;
 }
@@ -260,6 +266,12 @@
     
     .koreaBox {
         margin-right: -70px;
+    }
+
+    #pdfResume {
+        margin-top: -5%;
+        width: 370px; 
+        height: 700px;
     }
 }
 
