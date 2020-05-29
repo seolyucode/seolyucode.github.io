@@ -87,6 +87,37 @@ function showSlides04(n) {
 }
 
 
+// 코딩
+var slideIndex05 = 1;
+showSlides05(slideIndex05);
+
+// Next/previous controls
+function plusSlides05(n) {
+    showSlides05(slideIndex05 += n);
+}
+
+// Thumbnail image controls
+function currentSlide05(n) {
+    showSlides05(slideIndex05 = n);
+}
+
+function showSlides05(n) {
+    var i;
+    var slides = document.getElementsByClassName("ACAC05");
+    if (n > slides.length) {
+        slideIndex05 = 1
+    }
+    if (n < 1) {
+        slideIndex05 = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex05 - 1].style.display = "block";
+}
+
+
+
 // Artwork
 var slideIndex07 = 1;
 showSlides07(slideIndex07);
