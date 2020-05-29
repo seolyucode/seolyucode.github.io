@@ -1009,6 +1009,8 @@ body {
     }
 
     .contentsBox {
+        margin-top: 4%;
+        width: 100%;
         display: flex;
         /* width: 90px; */
         flex-direction: column;
@@ -1046,7 +1048,7 @@ body {
     .contact {
         transform: scale(0.15);
         margin-right: -370px;
-        margin-top: 150px;
+        margin-top: 350px;
     }
 }
 
@@ -1141,6 +1143,6 @@ body {
     #contact {
         transform: scale(0.2);
         margin-right: -200px;
-        padding-top: 450px;
+        padding-top: 10px;
     }
 }
