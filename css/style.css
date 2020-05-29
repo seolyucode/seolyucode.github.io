@@ -1116,7 +1116,7 @@ body {
     }
 
     .webPub {
-        display: none;
+        /* display: none; */
     }
 
     .rightIcon {
