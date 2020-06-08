@@ -154,7 +154,7 @@ showSlides08(slideIndex08);
 
 // Next/previous controls
 function plusSlides08(n) {
-    showSlides07(slideIndex08 += n);
+    showSlides08(slideIndex08 += n);
 }
 
 // Thumbnail image controls
