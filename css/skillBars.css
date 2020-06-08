@@ -87,19 +87,19 @@
 }
 
 #seolyuWebAbility:checked~div>.sideFill {
-    width: 90%;
+    width: 98.3%;
 }
 
 #seolyuHTMLAbility:checked~div>.sideFill {
-    width: 95%;
+    width: 100%;
 }
 
 #seolyuCSSAbility:checked~div>.sideFill {
-    width: 90%;
+    width: 100%;
 }
 
 #seolyuJSAbility:checked~div>.sideFill {
-    width: 85%;
+    width: 95%;
 }
 
 .seolyuCodingSkillBar:checked+.seolyuCodingSkillBarText {
