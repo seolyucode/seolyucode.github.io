@@ -625,6 +625,7 @@
 }
 
 .ACACimg07 {
+    border-radius: 13px;
     /* display: none; */
     /* width: auto;
     height: 100%; */
@@ -751,6 +752,7 @@
 }
 
 #myImg07 {
+    border-radius: 13px;
     width: 100%;
     height: auto;
     margin-top: 10%;
@@ -776,6 +778,7 @@
 }
 
 .ACACimg08 {
+    border-radius: 13px;
     /* display: none; */
     /* width: auto;
     height: 100%; */
@@ -902,6 +905,7 @@
 }
 
 #myImg08 {
+    border-radius: 13px;
     width: 100%;
     height: auto;
     margin-top: 10%;
